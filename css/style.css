@@ -1,0 +1,154 @@
+/* Estilo do corpo */
+body {
+    background-color: rgb(10, 98, 2);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 100px;
+}
+
+/* Estilo do título principal */
+h1 {
+    margin-top: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Estilo da navegação */
+header {
+    background-color: #71c35b;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #71c35b;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+/* Estilo do gráfico */
+figure#grafico {
+    background-color: #e0e0e0;
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+figure figcaption {
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Imagem do Efeito Estufa */
+.img {
+    max-height: 300px;
+    width: auto;
+    margin: 20px auto;
+}
+
+/* Tabela de Dados */
+#tabela-dados table {
+    margin: 20px auto;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #333;
+    color: white;
+}
+
+#tabela-dados th, #tabela-dados td {
+    border: 1px solid white;
+    padding: 12px;
+    text-align: center;
+}
+
+#tabela-dados th {
+    background-color: #71c35b;
+}
+
+#tabela-dados tbody tr:nth-child(even) {
+    background-color: #444;
+}
+
+/* Seção de Sobre */
+#sobre {
+    background-color: #71c35b;
+    padding: 30px 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+#sobre h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Seção de Conclusão */
+#conclusao {
+    background-color: #71c35b;
+    padding: 30px 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+#conclusao h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+#conclusao p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilo de Responsividade */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    figure#grafico, #tabela-dados table {
+        width: 95%;
+    }
+
+    .img {
+        max-width: 100%;
+        height: auto;
+    }
+}
